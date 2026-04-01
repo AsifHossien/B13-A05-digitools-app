@@ -1,5 +1,4 @@
 import React from "react";
-
 const Footer = () => {
   return (
     <footer className="bg-blue-950 text-gray-400 pt-20 pb-10 px-6 md:px-16">
@@ -65,7 +64,6 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-
             <div>
               <h4 className="text-white font-bold mb-6">Resources</h4>
               <ul className="space-y-4 text-sm">
@@ -92,7 +90,6 @@ const Footer = () => {
               </ul>
             </div>
           </div>
-
           <div className="lg:ml-20">
             <h4 className="text-white font-bold ml-3 mb-6">Social Links</h4>
             <div className="flex gap-4">

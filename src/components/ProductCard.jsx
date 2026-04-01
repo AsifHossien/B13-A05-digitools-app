@@ -1,21 +1,13 @@
 import React, { useState } from "react";
-
 const ProductCard = ({ product, onAddToCart }) => {
   const [isAdded, setIsAdded] = useState(false);
-
   const handleClick = () => {
-    // 1. Trigger the cart logic in App.jsx
     onAddToCart(product);
-
-    // 2. Trigger local visual transformation
     setIsAdded(true);
-
-    // 3. Revert back to original state after 2 seconds
     setTimeout(() => {
       setIsAdded(false);
     }, 2000);
   };
-
   return (
     <div className="relative bg-white border border-gray-200 rounded-4xl p-8 transition-all duration-300 hover:shadow-2xl hover:shadow-purple-100 w-full max-w-sm group">
       <div className="absolute top-6 right-6">
@@ -31,7 +23,6 @@ const ProductCard = ({ product, onAddToCart }) => {
           {product.tag}
         </span>
       </div>
-
       <div className="w-16 h-16 bg-gray-50 rounded-2xl flex items-center justify-center mb-6 border border-gray-100 shadow-sm">
         <img
           src={`/src/assets/${product.icon}`}
@@ -39,14 +30,12 @@ const ProductCard = ({ product, onAddToCart }) => {
           className="w-8 h-8 object-contain"
         />
       </div>
-
       <h3 className="text-2xl font-black text-gray-900 mb-3 tracking-tight">
         {product.name}
       </h3>
       <p className="text-gray-500 text-sm leading-relaxed mb-6 h-12 overflow-hidden">
         {product.description}
       </p>
-
       <div className="flex items-baseline gap-1 mb-8">
         <span className="text-3xl font-black text-gray-900">
           ${product.price}
@@ -55,7 +44,6 @@ const ProductCard = ({ product, onAddToCart }) => {
           /{product.period === "one-time" ? "One-Time" : "Mo"}
         </span>
       </div>
-
       <ul className="space-y-3 mb-10">
         {product.features.map((feature, i) => (
           <li

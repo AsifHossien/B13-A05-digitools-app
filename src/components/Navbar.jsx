@@ -1,5 +1,4 @@
 import React from "react";
-
 const Navbar = ({ cartCount, activeTab, onToggle }) => {
   return (
     <div className="pt-6 w-11/12 mx-auto">
@@ -14,7 +13,6 @@ const Navbar = ({ cartCount, activeTab, onToggle }) => {
             </span>
           </button>
         </div>
-
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal bg-gray-50/50 rounded-full px-2 py-1.5 gap-1 border border-gray-100">
             <li>

@@ -1,5 +1,4 @@
 import React from "react";
-
 const Pricing = () => {
   return (
     <section className="bg-white py-24 flex justify-center">
@@ -12,7 +11,6 @@ const Pricing = () => {
             Choose the plan that fits your needs. Upgrade or downgrade anytime.
           </p>
         </div>
-
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 max-w-6xl mx-auto">
           <div className="p-8 rounded-[35px] border border-gray-100 bg-white shadow-sm hover:shadow-md transition-all flex flex-col text-left">
             <h3 className="text-xl font-extrabold text-gray-800 mb-1">
