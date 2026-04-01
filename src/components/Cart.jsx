@@ -7,10 +7,7 @@ const Cart = ({
   onBack,
   isOrderCompleted,
 }) => {
-  // Calculate total price safely
   const total = cartItems.reduce((acc, item) => acc + item.price, 0);
-
-  // 1. Success State (Only after Checkout button is clicked)
   if (isOrderCompleted) {
     return (
       <div className="w-full max-w-4xl mx-auto p-12 bg-white rounded-[2.5rem] shadow-2xl border border-gray-100 text-center">
@@ -44,8 +41,6 @@ const Cart = ({
       </div>
     );
   }
-
-  // 2. Empty State (When user removes items manually)
   if (cartItems.length === 0) {
     return (
       <div className="w-full max-w-4xl mx-auto p-12 bg-gray-50/50 rounded-[2.5rem] border-2 border-dashed border-gray-200 text-center">
@@ -64,13 +59,10 @@ const Cart = ({
       </div>
     );
   }
-
-  // 3. Normal Cart View
   return (
     <div className="w-full max-w-4xl mx-auto p-8 bg-white rounded-[2.5rem] shadow-2xl border border-gray-100 text-gray-900">
       <div className="space-y-6">
         <h2 className="text-3xl font-black mb-8">Shopping Bag</h2>
-
         {cartItems.map((item, index) => (
           <div
             key={`${item.id}-${index}`}
@@ -99,8 +91,6 @@ const Cart = ({
             </button>
           </div>
         ))}
-
-        {/* Footer/Total Section */}
         <div className="mt-12 p-8 bg-gray-50 rounded-3xl border border-gray-100">
           <div className="flex justify-between items-center mb-6">
             <p className="text-gray-500 font-bold text-lg">Subtotal</p>
