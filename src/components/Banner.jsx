@@ -27,7 +27,7 @@ const Banner = () => {
               Explore Products
             </button>
             <button className="btn btn-outline border-2 border-gray-100 px-8 h-14 rounded-full flex gap-2 text-gray-700 hover:bg-gray-50 font-bold normal-case">
-              <img src="/src/assets/Play.png" alt="Play" className="w-5 h-5" />
+              <img src="/Play.png" alt="Play" className="w-5 h-5" />
               Watch Demo
             </button>
           </div>
@@ -35,7 +35,7 @@ const Banner = () => {
         <div className="flex justify-center lg:justify-end order-1 lg:order-2 flex-1">
           <div className="relative w-full max-w-lg">
             <img
-              src="/src/assets/banner.png"
+              src="/banner.png"
               alt="Digital Tools"
               className="w-full h-auto object-contain drop-shadow-2xl animate-pulse-slow"
             />

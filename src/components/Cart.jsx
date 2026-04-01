@@ -71,7 +71,7 @@ const Cart = ({
             <div className="flex items-center gap-6">
               <div className="w-16 h-16 bg-gray-50 rounded-2xl flex items-center justify-center border border-gray-100 shadow-sm">
                 <img
-                  src={`/src/assets/${item.icon}`}
+                  src={`/${item.icon}`}
                   className="w-8 h-8 object-contain"
                   alt={item.name}
                 />

@@ -3,7 +3,6 @@ import React from "react";
 const ProductSection = ({ view, setView, cartCount }) => {
   return (
     <div className="text-center mb-16 px-4">
-      {/* Static Title & Subtitle */}
       <h2 className="text-4xl md:text-5xl font-black text-gray-900 mb-4 tracking-tight">
         Premium Digital Tools
       </h2>
@@ -11,8 +10,6 @@ const ProductSection = ({ view, setView, cartCount }) => {
         Choose from our curated collection of premium digital products designed
         to boost your productivity and creativity.
       </p>
-
-      {/* View Toggle Pill */}
       <div className="inline-flex p-1.5 bg-gray-50 border border-gray-100 rounded-full shadow-sm">
         <button
           onClick={() => setView("product")}

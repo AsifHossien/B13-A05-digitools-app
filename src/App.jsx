@@ -17,29 +17,24 @@ function App() {
   const [view, setView] = useState("product");
   const [cart, setCart] = useState([]);
   const [isOrderCompleted, setIsOrderCompleted] = useState(false);
-
   const handleAddToCart = (product) => {
     setCart([...cart, product]);
     setIsOrderCompleted(false);
     toast.success(`${product.name} added!`);
   };
-
   const handleRemove = (index) => {
     setCart(cart.filter((_, i) => i !== index));
     toast.warn("Item removed");
   };
-
   const handleCheckout = () => {
     setCart([]);
     setIsOrderCompleted(true);
     toast.success("Order Placed!");
   };
-
   return (
     <div className="min-h-screen bg-white font-sans  w-full">
       <ToastContainer position="bottom-right" />
       <Navbar cartCount={cart.length} activeTab={view} onToggle={setView} />
-
       <main className="w-full">
         {view === "product" && (
           <div className="w-full">
@@ -47,7 +42,6 @@ function App() {
             <Stats />
           </div>
         )}
-
         <section className="py-20 flex justify-center w-full">
           <div className="w-11/12 max-w-325 mx-auto min-h-[60vh]">
             <ProductSection
@@ -55,7 +49,6 @@ function App() {
               setView={setView}
               cartCount={cart.length}
             />
-
             <div className="w-full">
               {view === "product" ? (
                 <ProductGrid
@@ -78,7 +71,6 @@ function App() {
           </div>
         </section>
       </main>
-
       <footer className="w-full overflow-hidden">
         <Steps />
         <Pricing />

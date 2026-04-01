@@ -25,7 +25,7 @@ const ProductCard = ({ product, onAddToCart }) => {
       </div>
       <div className="w-16 h-16 bg-gray-50 rounded-2xl flex items-center justify-center mb-6 border border-gray-100 shadow-sm">
         <img
-          src={`/src/assets/${product.icon}`}
+          src={`/${product.icon}`}
           alt={product.name}
           className="w-8 h-8 object-contain"
         />
