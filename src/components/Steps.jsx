@@ -6,19 +6,19 @@ const Steps = () => {
       id: "01",
       title: "Create Account",
       desc: "Sign up for free in seconds. No credit card required to get started.",
-      icon: "/src/assets/user.png",
+      icon: "/user.png",
     },
     {
       id: "02",
       title: "Choose Products",
       desc: "Browse our catalog and select the tools that fit your needs.",
-      icon: "/src/assets/package.png",
+      icon: "/package.png",
     },
     {
       id: "03",
       title: "Start Creating",
       desc: "Download and start using your premium tools immediately.",
-      icon: "/src/assets/rocket.png",
+      icon: "/rocket.png",
     },
   ];
   return (

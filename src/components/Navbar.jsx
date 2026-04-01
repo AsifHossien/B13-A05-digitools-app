@@ -60,7 +60,7 @@ const Navbar = ({ cartCount, activeTab, onToggle }) => {
               <div className="indicator">
                 <img
                   className="w-6"
-                  src="/src/assets/shopping-cart.png"
+                  src="/shopping-cart.png"
                   alt="Cart"
                 />
                 <span className="badge badge-sm indicator-item bg-primary text-white border-none font-bold">
