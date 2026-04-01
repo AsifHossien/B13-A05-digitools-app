@@ -32,7 +32,7 @@ function App() {
     if (cart.length === 0) return;
     setCart([]);
     setIsOrderCompleted(true);
-    toast.success("Order Placed Successfully! 🚀");
+    toast.success("Order Placed Successfully!");
   };
 
   const handleBackToProducts = () => {
@@ -47,7 +47,6 @@ function App() {
       <Navbar cartCount={cart.length} activeTab={view} onToggle={setView} />
 
       <main className="w-full">
-        {/* Banner & Stats show only on Product View */}
         <div
           className={
             view === "product" ? "block w-full overflow-hidden" : "hidden"
@@ -58,8 +57,7 @@ function App() {
         </div>
 
         <section className="py-20 flex justify-center w-full">
-          <div className="w-11/12 max-w-[1300px] mx-auto min-h-[60vh]">
-            {/* Header: Now same for both Product and Cart */}
+          <div className="w-11/12 max-w-325 mx-auto min-h-[60vh]">
             <div className="text-center mb-16 px-4">
               <h2 className="text-4xl md:text-5xl font-black text-gray-900 mb-4 tracking-tight">
                 Premium Digital Tools
@@ -68,8 +66,6 @@ function App() {
                 Choose from our curated collection of premium digital products
                 designed to boost your productivity and creativity.
               </p>
-
-              {/* Toggle Buttons */}
               <div className="inline-flex p-1.5 bg-gray-50 border border-gray-100 rounded-full shadow-sm">
                 <button
                   onClick={() => setView("product")}
@@ -93,7 +89,6 @@ function App() {
                 </button>
               </div>
             </div>
-
             <div className="w-full">
               {view === "product" ? (
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 justify-items-center">
@@ -118,7 +113,6 @@ function App() {
           </div>
         </section>
       </main>
-
       <footer className="w-full overflow-hidden">
         <Steps />
         <Pricing />
