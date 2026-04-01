@@ -3,7 +3,7 @@ const Stats = () => {
     /* Full-width purple background wrapper */
     <div className="w-full bg-purple-600 py-12 mb-16 overflow-hidden">
       {/* Centered content wrapper matching your 11/12 grid */}
-      <div className="w-11/12 max-w-[1300px] mx-auto">
+      <div className="w-11/12 max-w-325 mx-auto">
         <div className="stats w-full bg-transparent border-none text-white grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="stat place-items-center border-none">
             <div className="stat-value text-4xl md:text-5xl font-black">
