@@ -1,16 +1,22 @@
-# React + Vite
+DigiTools - Premium Asset Marketplace
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+DigiTools is a sleek, modern e-commerce storefront for digital products. Built with a focus on high-end user experience, it features a seamless transition between product discovery and a state-managed shopping cart, all wrapped in a premium "SaaS-style" aesthetic.
 
-Currently, two official plugins are available:
+Technologies :
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+React.js (Vite):** Core framework for a fast, reactive UI.
+Tailwind CSS:** For the ultra-clean, "purple-themed" premium design.
+DaisyUI: Used for refined button styles and layout components.
+React-Toastify: Providing real-time user feedback for cart actions.
+Lucide/Custom Assets: High-quality icons and PNGs for a professional look.
 
-## React Compiler
+Key Features:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Smart Cart Logic: Includes an index-based removal system that allows users to add multiple quantities of the same item and remove them individually without deleting duplicates.
+  
+Interactive Purchase Flow: The "Buy Now" button provides instant visual gratification by transforming into a green "Added" state with smooth CSS transitions.
 
-## Expanding the ESLint configuration
+Dual-State Viewport: A unified landing page that toggles between a 9-item product grid and a comprehensive checkout summary without page reloads.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Checkout Success Workflow:
+  Distinguishes between an empty cart (manual removal) and a successful purchase (checkout completion), showing unique "Success" states for each.
