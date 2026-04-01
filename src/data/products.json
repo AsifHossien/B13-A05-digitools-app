@@ -1,0 +1,101 @@
+[
+  {
+    "id": 1,
+    "name": "Design Pro",
+    "description": "Create stunning visuals with our high-performance vector engine.",
+    "price": 49,
+    "period": "one-time",
+    "tag": "Popular",
+    "tagType": "badge-primary",
+    "features": ["100+ templates", "SVG Export", "Cloud Sync"],
+    "icon": "design-tool.png"
+  },
+  {
+    "id": 2,
+    "name": "WriteFlow AI",
+    "description": "Smart writing assistant for lightning-fast content creation.",
+    "price": 12,
+    "period": "monthly",
+    "tag": "New",
+    "tagType": "badge-secondary",
+    "features": ["AI Generation", "Grammar Check", "SEO Mode"],
+    "icon": "writing_2327400 1.png"
+  },
+  {
+    "id": 3,
+    "name": "Social Boost",
+    "description": "Manage all social channels in one centralized dashboard.",
+    "price": 25,
+    "period": "monthly",
+    "tag": "Best Seller",
+    "tagType": "badge-accent",
+    "features": ["Auto-post", "Analytics", "Bio-link"],
+    "icon": "social-media.png"
+  },
+  {
+    "id": 4,
+    "name": "DevOps Ops",
+    "description": "Automate your deployment and infrastructure monitoring.",
+    "price": 199,
+    "period": "yearly",
+    "tag": "Best Seller",
+    "tagType": "badge-ghost",
+    "features": ["CI/CD Logs", "SSH Access", "Uptime Alerts"],
+    "icon": "operation.png"
+  },
+  {
+    "id": 5,
+    "name": "PortfoliGen",
+    "description": "Build a professional portfolio site in under 10 minutes.",
+    "price": 20,
+    "period": "one-time",
+    "tag": "Popular",
+    "tagType": "badge-info",
+    "features": ["Custom Domain", "No-code Editor", "Fast Hosting"],
+    "icon": "portfolio.png"
+  },
+  {
+    "id": 6,
+    "name": "Mail Master",
+    "description": "Email marketing automation with high deliverability rates.",
+    "price": 15,
+    "period": "monthly",
+    "tag": "Popular",
+    "tagType": "badge-success",
+    "features": ["Smart Segments", "A/B Testing", "Heatmaps"],
+    "icon": "banner.png"
+  },
+  {
+    "id": 7,
+    "name": "Data Dash",
+    "description": "Real-time analytics for your SaaS or e-commerce store.",
+    "price": 35,
+    "period": "monthly",
+    "tag": "New",
+    "tagType": "badge-success",
+    "features": ["Live Tracking", "Weekly Reports", "API Access"],
+    "icon": "writing_2327400 1.png"
+  },
+  {
+    "id": 8,
+    "name": "Secure Vault",
+    "description": "Enterprise-grade encryption for your digital assets.",
+    "price": 89,
+    "period": "yearly",
+    "tag": "Best Seller",
+    "tagType": "badge-success",
+    "features": ["256-bit AES", "2FA Login", "Bulk Storage"],
+    "icon": "operation.png"
+  },
+  {
+    "id": 9,
+    "name": "Video Edit",
+    "description": "Browser-based video editor for social media creators.",
+    "price": 29,
+    "period": "monthly",
+    "tag": "New",
+    "tagType": "badge-success",
+    "features": ["Stock Clips", "Subtitles AI", "4K Export"],
+    "icon": "Play.png"
+  }
+]
